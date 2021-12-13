@@ -41,7 +41,7 @@ Install libtinfo5: ```apt install libtinfo5```
 
 !You'll notice that ```/root/.stack/config.yaml``` is empty. You'll need to add something there for example: ```skip-ghc-check: false```
 
-Clone simplex: ```git clone git@github.com:simplex-chat/simplex-chat.git```
+Clone simplex: ```git clone https://github.com/simplex-chat/simplex-chat```
 
 Go to simplex: ```cd simplex-chat```
 
