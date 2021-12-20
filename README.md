@@ -26,7 +26,7 @@ Add it to PATH: ```echo "export PATH=\"\$HOME/.cabal/bin:\$HOME/.ghcup/bin:\$PAT
 
 Set GHC and Install Cabal: ```ghcup install ghc && ghcup set ghc && ghcup install cabal && ghcup set cabal```
 
-Clone SimpleX: ```git clone https://github.com/simplex-chat/simplex-chat && cd simplex-chat```
+Clone SimpleX & cd into it: ```git clone https://github.com/simplex-chat/simplex-chat && cd simplex-chat```
 
 Update Cabal then Build: ```cabal update && cabal build```
 
