@@ -1,6 +1,6 @@
 Fix termux: ```pkg remove game-repo```
 
-Fix termux_2: ```pkg remove science-repo```
+Fix termux number 2: ```pkg remove science-repo```
 
 Update: ```pkg update```
 
@@ -14,35 +14,27 @@ Install git: ```apt-get install git -y```
 
 Go to HOME folder: ```cd ~```
 
-Download script: ```git clone https://github.com/MFDGaming/ubuntu-in-termux.git```
+Install Ubuntu on Proot: ```proot-distro install ubuntu```
 
-Go to script folder: ```cd ubuntu-in-termux```
+Login to Ubuntu: ```proot-distro login ubuntu```
 
-Give execution permission: ```chmod +x ubuntu.sh```
+Update & Install Dependencies: ```apt update && apt install curl libnuma-dev git llvm-dev clang make zlib1g-dev```
 
-Run the script: ```./ubuntu.sh -y```
+Install ghcup: ```mkdir -p ~/.ghcup/bin && curl https://downloads.haskell.org/~ghcup/aarch64-linux-ghcup -o ~/.ghcup/bin/ghcup && chmod +x ~/.ghcup/bin/ghcup```
 
-Now just start ubuntu: ```./startubuntu.sh```
+Add it to PATH: ```echo "export PATH=\"\$HOME/.cabal/bin:\$HOME/.ghcup/bin:\$PATH\"" >> ~/.bashrc && source ~/.bashrc```
 
-Update: ```apt update```
+Set GHC and Install Cabal: ```ghcup install ghc && ghcup set ghc && ghcup install cabal && ghcup set cabal```
 
-Install clang: ```apt install clang```
+Clone SimpleX: ```git clone https://github.com/simplex-chat/simplex-chat && cd simplex-chat```
 
-Install gcc: ```apt install gcc```
-
-Install ghc: ```apt install ghc```
-
-Install cabal: ```apt install cabal-install```
-
-Install stack: ```apt install haskell-stack```
-
-Install libtinfo5: ```apt install libtinfo5```
+Update Cabal then Build: ```cabal update && cabal build```
 
 
-!You'll notice that ```/root/.stack/config.yaml``` is empty. You'll need to add something there for example: ```skip-ghc-check: false```
+Directory to simplex-chat will print in final linking stage. In my case it was: `/root/simplex-chat/dist-newstyle/build/aarch64-linux/ghc-8.10.7/simplex-chat-0.5.2/x/simplex-chat/build/simplex-chat/simplex-chat`
 
-Clone simplex: ```git clone https://github.com/simplex-chat/simplex-chat```
+Grab the binary for simplex-chat located in the directory above place it somewhere, make it executable with ```chmod +x simplex-chat``` and add the location you placed the binary in to your PATH.
 
-Go to simplex: ```cd simplex-chat```
+Finally enter ```simplex-chat``` to launch SimpleX.
 
-Install stack: ```stack install```
+
