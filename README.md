@@ -1,6 +1,6 @@
 After a few weeks of trying, we got Haskell to compile on aarch64 architecture. This was done from an Android phone with Termux running a virtual Ubuntu shell courtesy of PRoot. This was done alongside our effort to port SimpleX for [iOS and Android](https://www.reddit.com/r/haskell/comments/r82ji7/christmas_of_code_haskell_for_mobile_a_3000_grant/)
 
-[SimpleX](https://github.com/simplex-chat/simplex-chat) is a thin terminal UI message broker that uses [SMP protocols](https://github.com/simplex-chat/simplexmq/blob/master/protocol). The motivation for SimpleX chat is [presented here](./simplex.md). See [simplex.chat](https://simplex.chat) website for chat demo and the explanations of the system and how SMP protocol works.
+[SimpleX](https://github.com/simplex-chat/simplex-chat) is a thin terminal UI message broker that uses [SMP protocols](https://github.com/simplex-chat/simplexmq/blob/master/protocol). The motivation for SimpleX chat is [presented here](./simplex.md).
 
 Fix termux: ```pkg remove game-repo```
 
