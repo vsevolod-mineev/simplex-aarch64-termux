@@ -1,4 +1,4 @@
-After a few weeks of trying, we got Haskell to compile on aarch64 architecture. This was done from an Android phone with Termux running a virtual Ubuntu shell courtesy of PRoot. This was done alongside our effort to port SimpleX for [iOS and Android.](https://www.reddit.com/r/haskell/comments/r82ji7/christmas_of_code_haskell_for_mobile_a_3000_grant/) This recipe assumes a fresh Termux installation.
+After a few weeks of trying, we got Haskell to compile on aarch64 architecture. This was done from an Android phone with Termux running a virtual Ubuntu shell courtesy of PRoot alongside our larger effort to port SimpleX for [iOS and Android.](https://www.reddit.com/r/haskell/comments/r82ji7/christmas_of_code_haskell_for_mobile_a_3000_grant/) This recipe assumes a fresh Termux installation.
 
 [SimpleX](https://github.com/simplex-chat/simplex-chat) is a thin terminal UI message broker that uses [SMP protocols](https://github.com/simplex-chat/simplexmq/blob/master/protocol). The motivation for SimpleX chat is [presented here](./simplex.md).
 
@@ -12,13 +12,13 @@ Update termux: ```apt-get update && apt-get upgrade -y```
 
 Install wget: ```apt-get install wget -y```
 
-Install proot: ```apt-get install proot -y```
+Install PRoot: ```apt-get install proot -y```
 
 Install git: ```apt-get install git -y```
 
 Go to HOME folder: ```cd ~```
 
-Install Ubuntu on Proot: ```proot-distro install ubuntu```
+Install Ubuntu on PRoot: ```proot-distro install ubuntu```
 
 Login to Ubuntu: ```proot-distro login ubuntu```
 
@@ -37,7 +37,7 @@ Update Cabal then Build: ```cabal update && cabal build```
 
 Directory to simplex-chat will print in final linking stage. In my case it was: `/root/simplex-chat/dist-newstyle/build/aarch64-linux/ghc-8.10.7/simplex-chat-0.5.2/x/simplex-chat/build/simplex-chat/simplex-chat`
 
-Grab the binary for simplex-chat located in the directory above place it somewhere, make it executable with ```chmod +x simplex-chat``` and add the location you placed the binary in to your PATH.
+Grab the binary for simplex-chat located in the directory above -> place it somewhere -> make it executable with ```chmod +x simplex-chat``` -> add the location you placed the binary in to your PATH.
 
 Finally enter ```simplex-chat``` to launch SimpleX.
 
