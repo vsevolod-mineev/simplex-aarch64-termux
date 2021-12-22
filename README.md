@@ -14,6 +14,8 @@ Install wget: ```apt-get install wget -y```
 
 Install PRoot: ```apt-get install proot -y```
 
+Install PRoot Distro: ```apt-get install proot-distro -y```
+
 Install git: ```apt-get install git -y```
 
 Go to HOME folder: ```cd ~```
