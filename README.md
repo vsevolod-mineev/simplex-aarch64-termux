@@ -34,8 +34,9 @@ Set GHC and Install Cabal: ```ghcup install ghc && ghcup set ghc && ghcup instal
 
 Clone SimpleX & cd into it: ```git clone https://github.com/simplex-chat/simplex-chat && cd simplex-chat```
 
-Update Cabal then Build: ```cabal update && cabal build```
+To avoid Android killing the compiler enable power mode, put phone on charge, and remove Termux from tracking by "Memory" within "Device care" of "Settings".
 
+Update Cabal then Build: ```cabal update && cabal build```
 
 Directory to simplex-chat will print in final linking stage. In my case it was: `/root/simplex-chat/dist-newstyle/build/aarch64-linux/ghc-8.10.7/simplex-chat-0.5.2/x/simplex-chat/build/simplex-chat/simplex-chat`
 
