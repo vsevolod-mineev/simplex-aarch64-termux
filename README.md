@@ -10,13 +10,7 @@ Update: ```pkg update```
 
 Update termux: ```apt-get update && apt-get upgrade -y```
 
-Install wget: ```apt-get install wget -y```
-
-Install PRoot: ```apt-get install proot -y```
-
-Install PRoot Distro: ```apt-get install proot-distro -y```
-
-Install git: ```apt-get install git -y```
+Install Dependencies: ```apt-get install wget proot proot-distro git -y```
 
 Go to HOME folder: ```cd ~```
 
