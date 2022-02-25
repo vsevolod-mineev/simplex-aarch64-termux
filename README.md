@@ -1,4 +1,6 @@
-After a few weeks of trying, we got Haskell to compile on aarch64 architecture. This was done from an Android phone with Termux running a virtual Ubuntu shell courtesy of PRoot alongside our larger effort to port SimpleX for [iOS and Android.](https://www.reddit.com/r/haskell/comments/r82ji7/christmas_of_code_haskell_for_mobile_a_3000_grant/) This recipe assumes a fresh Termux installation.
+We got Haskell to compile on aarch64 architecture. This was done from an Android phone with Termux running a virtual Ubuntu shell courtesy of PRoot alongside our larger effort to port SimpleX for [iOS and Android.](https://www.reddit.com/r/haskell/comments/r82ji7/christmas_of_code_haskell_for_mobile_a_3000_grant/) This recipe assumes a fresh Termux installation.
+
+If you'd like to skip the compilation process and just [grab the binary](https://github.com/vsevolod-mineev/simplex-aarch64-termux/releases) it is available in releases.
 
 [SimpleX](https://github.com/simplex-chat/simplex-chat) is a thin terminal UI message broker that uses [SMP protocols](https://github.com/simplex-chat/simplexmq/blob/master/protocol). The motivation for SimpleX chat is [presented here](./simplex.md).
 
